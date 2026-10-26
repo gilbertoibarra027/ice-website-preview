@@ -69,8 +69,8 @@
 
   // Contact form — client-side validation only.
   // TODO(integration): set FORM_ENDPOINT to your Formspree / CRM / ESP endpoint and flip LIVE to true.
-  var FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; // [Form endpoint TBD]
-  var LIVE = false; // Must stay false until Gilberto picks the destination. Nothing is sent while false.
+  var FORM_ENDPOINT = 'https://formspree.io/f/xyeeezdg';
+  var LIVE = true;
   var form = document.getElementById('contact-form');
   if(form){
     var rules = {
