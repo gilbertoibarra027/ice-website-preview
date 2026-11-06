@@ -69,7 +69,7 @@
 
   // Contact form — client-side validation only.
   // TODO(integration): set FORM_ENDPOINT to your Formspree / CRM / ESP endpoint and flip LIVE to true.
-  var FORM_ENDPOINT = 'https://formspree.io/f/xyeeezdg';
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/support@incomecreditequity.com';
   var LIVE = true;
   var form = document.getElementById('contact-form');
   if(form){
@@ -104,6 +104,7 @@
       } else { done(); }
     });
     function done(){
+      if(form.elements.topic && form.elements.topic.value==='early-access'){ location.href='thanks.html'; return; }
       var box = document.getElementById('form-success');
       form.hidden = true; box.hidden = false; box.focus();
     }
